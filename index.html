@@ -21,31 +21,57 @@
             margin: 0;
         }
         .container {
+            display: flex;
             width: 80%;
-            margin: auto;
-            overflow: hidden;
+            margin: 20px auto;
         }
         .profile {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
+            flex: 2;
+            margin-right: 20px;
         }
         .profile img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
-            margin-right: 20px;
-        }
-        .profile-info {
-            flex: 1;
-        }
-        .sections {
-            margin-top: 30px;
-        }
-        .section {
             margin-bottom: 20px;
         }
-        .section h2 {
+        .profile-info {
+            margin-bottom: 20px;
+        }
+        .profile-info h2 {
+            margin: 0 0 10px;
+        }
+        .profile-info p {
+            margin: 5px 0;
+        }
+        .sidebar {
+            flex: 1;
+            background: #f4f4f4;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .about {
+            margin-top: 30px;
+        }
+        .about h2 {
             color: #333;
             border-bottom: 2px solid #f4f4f4;
             padding-bottom: 5px;
@@ -57,13 +83,6 @@
             padding: 10px 0;
             margin-top: 20px;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
@@ -73,7 +92,7 @@
     </header>
 
     <div class="container">
-        <!-- Profile -->
+        <!-- Profile Section -->
         <div class="profile">
             <img src="photo.jpg" alt="Profile Picture">
             <div class="profile-info">
@@ -84,42 +103,23 @@
             </div>
         </div>
 
-        <!-- Sections -->
-        <div class="sections">
-            <!-- About -->
-            <div class="section" id="about">
-                <h2>About</h2>
-                <p>I am a passionate professional with expertise in [your field]. With [number of years] years of experience, I strive to deliver innovative and tailored solutions for every project.</p>
-            </div>
+        <!-- Sidebar with Navigation -->
+        <aside class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+    </div>
 
-            <!-- Skills -->
-            <div class="section" id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Proficient in [skill 1]</li>
-                    <li>Experienced in [skill 2]</li>
-                    <li>Strong knowledge of [skill 3]</li>
-                </ul>
-            </div>
-
-            <!-- Portfolio -->
-            <div class="section" id="portfolio">
-                <h2>Portfolio</h2>
-                <p>Here are some of my recent projects:</p>
-                <ul>
-                    <li><a href="https://example.com/project1" target="_blank">Project 1</a> - Brief description</li>
-                    <li><a href="https://example.com/project2" target="_blank">Project 2</a> - Brief description</li>
-                    <li><a href="https://example.com/project3" target="_blank">Project 3</a> - Brief description</li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="section" id="contact">
-                <h2>Contact</h2>
-                <p>If you would like to discuss a project or collaboration, feel free to reach out:</p>
-                <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-                <p>Phone: +1 123-456-7890</p>
-            </div>
+    <!-- About Section -->
+    <div class="container">
+        <div class="about" id="about">
+            <h2>About</h2>
+            <p>I am a passionate professional with expertise in [your field]. With [number of years] years of experience, I strive to deliver innovative and tailored solutions for every project.</p>
         </div>
     </div>
 
