@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page of Olivier AYCARD</title>
+    <title>Olivier AYCARD</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,84 +11,73 @@
             line-height: 1.6;
         }
         header {
-            background: #333;
+            background: #005a8c;
             color: #fff;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
-        .container {
-            display: flex;
-            width: 80%;
-            margin: 20px auto;
-        }
-        .profile {
-            flex: 2;
-            margin-right: 20px;
-        }
-        .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 20px;
-        }
-        .profile-info {
-            margin-bottom: 20px;
-        }
-        .profile-info h2 {
-            margin: 0 0 10px;
-        }
-        .profile-info p {
-            margin: 5px 0;
-        }
-        .sidebar {
-            flex: 1;
-            background: #f4f4f4;
-            padding: 20px;
-            border-left: 1px solid #ddd;
-        }
-        .sidebar h3 {
-            margin-top: 0;
-            color: #333;
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            margin-bottom: 10px;
-        }
-        .sidebar ul li a {
+        nav a {
+            color: #fff;
+            margin: 0 15px;
             text-decoration: none;
-            color: #007bff;
         }
-        .sidebar ul li a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
-        .about {
-            margin-top: 30px;
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
         }
-        .about h2 {
-            color: #333;
-            border-bottom: 2px solid #f4f4f4;
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            color: #005a8c;
+            border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Olivier AYCARD</h1>
-        <p>Full Professor Grenoble-INP PHELMA, GIPSA Lab, FRANCE</p>
+        <img src="photo.jpg" alt="Profile Picture">
+        <div class="info">
+            <h1>Olivier AYCARD</h1>
+            <p>Full Professor</p>
+            <p>Grenoble-INP PHELMA</p>
+            <p>GIPSA Lab, FRANCE</p>
     </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+    </nav>
 
     <div class="container">
         <!-- Profile Section -->
