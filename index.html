@@ -10,42 +10,50 @@
             padding: 0;
             line-height: 1.6;
         }
-        header {
-            background: #005a8c;
-            color: #fff;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            text-align: left;
-        }
-
-        header img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-        }
-
-        header .info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        header h1 {
-            margin: 0 0 10px;
-            font-size: 24px;
-    }
-
-header p {
-    margin: 4px 0;
+header {
+    background: #005a8c;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
 }
 
-        
+header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+header .info h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header .info p {
+    margin: 2px 0;
+    font-size: 16px;
+}
+
+header .info p:nth-child(3),
+header .info p:nth-child(4) {
+    font-style: italic;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+header .info p:last-child {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #cce5ff;
+    font-style: normal;
+}
+       
         nav {
             background: #333;
             color: #fff;
@@ -103,7 +111,7 @@ header p {
         <p>Full Professor</p>
         <p>Grenoble-INP PHELMA</p>
         <p>GIPSA Lab, FRANCE</p>
-        <p>olivier.aycard@grenoble-inp.fr</p>
+        <p><a href="mailto:olivier.aycard@grenoble-inp.fr" style="color: #cce5ff; text-decoration: none;">olivier.aycard@grenoble-inp.fr</a></p>
     </div>
 </header>
     
