@@ -15,12 +15,17 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: fixed; /* <-- fixé en haut */
+            width: 100%;
+            height: 150px; /* Hauteur fixée */
         }
         nav {
             background: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
+            position: sticky; /* <-- collant sous header */
+            top: 190px; /* Nav descend de 150px */
         }
         nav a {
             color: #fff;
@@ -36,7 +41,13 @@
             padding: 20px;
             background: #f4f4f4;
             border-radius: 8px;
+            margin-top: 250px; /* Décaler tout le contenu plus bas */
         }
+
+        #lectures, #labs, #source_files, #report, #examen {
+            scroll-margin-top: 250px; /* Ajustement des ancres */
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -58,6 +69,12 @@
             width: 100%;
             bottom: 0;
         }
+
+        .red-link {
+            color: red; /* couleur rouge fixe */
+            font-weight: bold; /* optionnel : pour rendre plus visible */
+        }
+
     </style>
 </head>
 <body>
@@ -72,6 +89,7 @@
         <a href="#source files">Source files</a>
         <a href="#report">Report</a>
         <a href="#examen">Examen</a>
+        <a href="../../index.html" class="red-link">Main page</a> 
     </nav>
 
     <div class="container">
@@ -158,7 +176,7 @@
             </ul>
         </section>    
     
-        <section id="examen">
+        <section id="examen (only for ENSE3)">
             <h2>Examen</h2>
             <ul>
                 <li><a href="Examen/example_examen_olivier_aycard.pdf">Statement for 2023-24</a>.</li>
