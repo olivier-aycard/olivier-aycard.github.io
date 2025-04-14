@@ -31,14 +31,14 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 150px; /* Hauteur fixée */
+            height: 230px; /* Hauteur fixée */
             z-index: 1000;
             box-shadow: none;
         }
 
         header img {
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -82,7 +82,7 @@
             gap: 30px;
             z-index: 999;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            top: 190px; /* Nav descend de 150px */
+            top: 270px; /* Nav descend de 150px */
         }
 
 nav a {
@@ -102,16 +102,12 @@ nav a {
             padding: 20px;
             background: #f4f4f4;
             border-radius: 8px;
-            margin-top: 250px; /* Décaler tout le contenu plus bas */
+            margin-top: 270px; /* Décaler tout le contenu plus bas */
         }
 
-        #about, #publications, #projects {
-    scroll-margin-top: 280px; /* Ajustement des ancres */
-}
-
-#teaching {
-    scroll-margin-top: 1000px; /* Ajustement des ancres */
-}
+        #about, #publications, #projects, #teaching, #contact {
+            scroll-margin-top: 350px; /* Ajustement des ancres */
+        }
 
         section {
             margin-bottom: 20px;
@@ -145,9 +141,9 @@ nav a {
     <img src="photo.jpg" alt="Profile Picture">
     <div class="info">
         <h1>Olivier AYCARD</h1>
-        <p>Full Professor</p>
-        <p>Grenoble-INP PHELMA</p>
-        <p>GIPSA Lab, FRANCE</p>
+        <h2>Full Professor</h2>
+        <h3>Grenoble-INP PHELMA</h3>
+        <h3>GIPSA Lab & INRIA, FRANCE</h3>
         <p><a href="mailto:olivier.aycard@grenoble-inp.fr" style="color: #cce5ff; text-decoration: none;">olivier.aycard@grenoble-inp.fr</a></p>
     </div>
 </header>
@@ -157,15 +153,16 @@ nav a {
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
     <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <!-- About Section -->
 <div class="container">
     <div class="about" id="about">
         <h2>About</h2>
-          <p>Olivier Aycard is a Full Professor in computer science at <a href="https://phelma.grenoble-inp.fr">PHELMA engineering school</a> of <a href="https://www.grenoble-inp.fr">Grenoble Institute of Technology</a> and a member of the robotics group <a href="">ASIMOV</a> of the <a href="https://www.gipsa-lab.grenoble-inp.fr">GIPSA Lab</a> and <a href="https://www.inria.fr/en/inria-centre-university-grenoble-alpes">INRIA</a>.</p>
+          <p>Olivier Aycard is a Full Professor in computer science at <a href="https://phelma.grenoble-inp.fr">PHELMA</a> engineering school of <a href="https://www.grenoble-inp.fr">Grenoble Institute of Technology</a> and a member of the robotics group <a href="">ASIMOV</a> of the <a href="https://www.gipsa-lab.grenoble-inp.fr">GIPSA Lab</a> and <a href="https://www.inria.fr/en/inria-centre-university-grenoble-alpes">INRIA</a>.</p>
 <p>He obtained his PhD in computer science with a specialization in robotics and perception at <a href="https://www.loria.fr">LORIA</a> in Nancy in June 1998. He was a <a href="">postdoctoral student</a> at <a href="https://www.nasa.gov/ames/">NASA Ames Research</a> in California in 1999. He was then recruited as an 
-    Associate Professor in the <a href="https://im2ag.univ-grenoble-alpes.fr/en/">computer science department</a> of <a href="https://www.univ-grenoble-alpes.fr">University of Grenoble Alpes</a> in October 1999 and was a member of the <a href="">APTIKAL</a> group of the <a href="https://www.liglab.fr">LIG</a> from 2007 to 2023.</p>
+    Associate Professor in the <a href="https://im2ag.univ-grenoble-alpes.fr/en/">computer science department</a> of <a href="https://www.univ-grenoble-alpes.fr">University of Grenoble Alpes</a> from 1999 to 2023 and was a member of the <a href="https://www.liglab.fr/en/research/research-teams/aptikal">APTIKAL</a> group of the <a href="https://www.liglab.fr">LIG</a> from 2007 to 2023.</p>
 
     <p>From 2003 to 2013, he worked in the field of perception for intelligent vehicles in several major European projects in cooperation with car manufacturers:</p>
 <ul>
@@ -246,12 +243,29 @@ nav a {
 <div class="container">
     <div class="teaching" id="teaching">
         <h2>Teaching</h2>
-        <p><a href="Teaching/Robotics/index.html">Introduction to mobile robotics</a>;</p>
+        <p>I am co-head of <a href="https://phelma.grenoble-inp.fr/en/studies/master-s-degree-in-engineering-grenoble-inp-phelma-embedded-systems-and-connected-devices-seoc#page-presentation">embedded systems and internet of things</a> engineering track (PHELMA-SEOC 3A, 90 students).</p>
+        <p>I am in charge of the following lectures:</p>
+        <ul>
+            <li>Common core <a href="https://ens_phelma.pages.ensimag.fr/www_info_1a_s1/#">Programming </a>(PHELMA 1A, 360 students);</li>
+            <li><a href="Teaching/Robotics/index.html">Introduction to mobile robotics </a>(ENSE3-ASI 3A, Master MARS & PHELMA-SEOC, 60 students).</li>
+        </ul>
+    </div>
+</div>
+
+<!-- About Contact -->
+<div class="container">
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Olivier Aycard</p>
+        <p>GIPSA Lab</p>
+        <p>Office B129 - 11 rue des Mathématiques - Grenoble Campus - BP46</p>
+        <p>38402 SAINT MARTIN D'HERES Cedex, FRANCE</p>            
+        <p><a href="mailto:olivier.aycard@grenoble-inp.fr">olivier.aycard@grenoble-inp.fr</a></p>
     </div>
 </div>
 
 <footer>
-    <p>Last update: april, 3rd, 2025 [Olivier AYCARD]. All rights reserved.</p>
+    <p>Last update: april, 14th, 2025 [Olivier AYCARD]. All rights reserved.</p>
 </footer>
 </body>
 </html>
