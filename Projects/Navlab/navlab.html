@@ -1,0 +1,23 @@
+<H1>NAVLAB</H1>
+
+<H4> Last update: april 17th 2012</H4>
+
+<H2>Project description</H2>
+We present how we use the public dataset <a href="http://www.cs.cmu.edu/~bobwang/datasets.html">NAVLAB</a> obtained on the CMU demonstrator (Figure 1) to test and validate our contributions on model-based tracking <a href="../../Publications/2009/Vu09.pdf">[Vu09]</a>. This dataset was collected using a moving vehicle driven in real-life traffics.
+
+<H2>CMU Demonstrator</H2>
+<img src="navlab.png" width=20%><br>FIGURE 1: The Navlab testbed.<br><br>
+
+A laserscanner is mounted on the moving vehicle. The maximum laser range of the scanner is 80m with the horizontal resolution of 0.5 degre. We only use laser data and odometry vehicle motion information such as translational and rotational velocity (speed and yaw rate) are computed and provided by internal sensors. Images from camera are only for visualization purpose.
+
+<H2>Experimental Results</H2>
+<img src="result_different_class1.png" width=20%><br>FIGURE 2: Different object classes are successfully detected and tracked.<br><br>
+
+<img src="result_occlusion1.png" width=20%><br>FIGURE 3: Example of tracking with occlusion.<br><br>
+
+On this demonstrator, we test our approach for SLAM with moving objects detection <a href="../../Publications/2007/Vu07.pdf">[Vu07]</a> and DATMO <a href="../../Publications/2009/Vu09.pdf">[Vu09]</a>. The grid has a size of 25m x 20m and each cell has a size of 20cms.<br><br>
+
+Figures 2 and 3 show an example of our detection and tracking algorithm in action. In the ego-vehicle's view, the detected moving objects and their trajectories are shown in pink color with current laser scan is in blue color. Moving objects in the situation include a bus moving in the opposite direction on the left, three cars moving ahead and two pedestrians walking on the left pavement. Figure 3 shows an example of our detection and tracking algorithm when an occlusion occurs. Even if only a part of the second car is detected by the laser, we are able to track this occluded car.
+With initial evaluations, the MCMC detection and tracking outperforms the detection and tracking using MHT in our <a href="../../Publications/2010/Vu10.pdf">previous work</a> in terms of a higher detection rate and less false alarms.<br><br>
+
+<H2>A video could be found <a href="https://youtu.be/Uqh8gfzMvIw?si=OtqaI0DTazf38oAV">here</a>.</H2>
